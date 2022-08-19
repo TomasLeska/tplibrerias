@@ -1,0 +1,271 @@
+* {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    
+    body {
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;  
+    }
+    
+    header {
+      width: 100%;
+      height: 10rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: 'Macondo', cursive;
+      font-size: 2rem;
+      color: #000000;  
+      padding: 0;
+    }
+    
+    hr {
+      width: 100%;
+      height: 1px;
+      background-color: #af7511;
+      border: none;
+    }
+    
+    select {
+      width: 12rem;
+      height: 2rem;  
+      box-shadow: 0 0 15px #ff0101;
+      border-radius: 15px;
+      background-color: #221007;
+      color: #ffff;
+    }
+    
+    main {
+      width: 100%;
+      height: auto;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    
+    .card-product {
+      margin: 1rem;
+      width: 10rem;
+      height: 13rem;
+      border-radius: 15px;
+      border: groove #16191a 2px;
+      background-color: #2e3032;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .img-product {
+      width: 100%;
+      border-radius: 15px 15px 0 0;
+      height: 50%;
+    }
+    
+    .name-product {
+      margin-top: 0.8rem;
+      color: #055c72;
+      font-family: 'Macondo', cursive;
+      font-size: 1.5rem;
+      font-weight: 600;
+    }
+    
+    .price-product {
+      font-family: 'Macondo', cursive;
+      font-size: 1.2rem;
+      font-weight: 600;
+      color: #582406;
+    }
+    
+    .btn-add {
+      width: 8rem;
+      height: 1.5rem;
+      border-radius: 5px;
+      background-color: green;
+      color: white;
+      font-size: 1rem;
+    }
+    
+    .btn-add:hover,
+    .btn-add:focus {
+      cursor: pointer;
+      background-color: #28930b;
+      font-weight: 900;
+      color: #ffff00;
+    }
+    
+    .container-products {
+      width: 80%;
+      height: auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-items: center;
+      margin-top: 1rem;
+    }
+    
+    #btn-create {
+      width: 12rem;
+      height: 2rem;
+      border-radius: 15px;
+      background-color: #28930b;
+      color: #ffff00;
+      font-size: 1rem;  
+      cursor: pointer;
+    }
+    
+    #btn-create:hover,
+    #btn-create:focus {
+      background-color: #167d70;
+      font-weight: 900;
+      color: #ffff;
+    }
+    
+    .modal {
+      width: 20rem;
+      height: 15rem;  
+      border: groove black 2px;
+      background-color: #98a2a8;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+      position: absolute;  
+      z-index: 1;
+      display: none;
+    }
+    
+    .modal > input {
+      width: 10rem;
+      height: 1.5rem;
+      border-radius: 15px;
+      background-color: #221007;
+      color: #ffff;
+      font-size: 1rem;  
+    }
+    
+    /* input tipo file dentro de .modal */
+    .modal input[type="file"] {
+      width: 14rem;
+      height: 2rem;
+      border-radius: 5px;  
+      color: #ffff;
+      font-size: 1rem;  
+      margin-left: 4rem;
+    }
+    
+    .modal > button {
+      width: 12rem;
+      height: 2rem;
+      border-radius: 15px;
+      background-color: #28930b;
+      color: #ffff00;
+      font-size: 1rem;  
+      cursor: pointer;  
+    }
+    
+    .modal > button:hover,
+    .modal > button:focus {
+      background-color: #167d70;
+      font-weight: 900;
+      color: #ffff;
+    }
+    
+    #close-modal {
+      width: 2rem;
+      height: 2rem;
+      border-radius: 50%;
+      background-color: #28930b;
+      color: #ffff00;
+      font-size: 1rem;  
+      cursor: pointer;
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+    }
+    
+    #table-cart {
+      width: 80%;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-top: 1rem;  
+      color: white;
+      font-family: 'Macondo', cursive;
+      font-size: 1.2rem;
+    }
+    
+    thead {
+      width: 100%;
+      height: 2rem;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;  
+      background-color: #6cb3f5;
+      text-align: center;  
+      border-bottom: groove #00305d 2px;
+    }
+    
+    thead tr,
+    #tBody .tr-products {
+      width: 100%;
+      height: 2rem;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;  
+    }
+    
+    #tBody {
+      width: 100%;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+    }
+    
+    #tBody tr {
+      background-color: #8d8f90;
+    }
+    
+    tbody tr td {
+      width: 100%;
+      height: 2rem;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;  
+      margin-left: 1rem;
+    }
+    
+    .decQuantity,
+    .addQuantity {
+      width: 3rem;
+      height: 1.5rem;
+      border-radius: 15px;
+      background-color: #28930b;
+      color: #ea1004;
+      font-size: 1.2rem;  
+      font-weight: 800;
+      cursor: pointer; 
+      display: flex; 
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .decQuantity:hover,
+    .addQuantity:hover {
+      background-color: #1bf44d;
+      font-weight: 900;
+      color: #ffff;
+    }
+  
+   .btn {
+    position: relative;
+    left: 40%;
+   }
